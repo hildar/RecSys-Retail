@@ -1,2 +1,2 @@
-# RecSys-retail
+# RecSys-Retail
 Recommender system in retail
