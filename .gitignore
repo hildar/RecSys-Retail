@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Big project .csv files
+*.csv
+
+# Big project model.dill file
+.dill
+
+# MacOS files
+.DS_Store
