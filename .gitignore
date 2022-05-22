@@ -139,5 +139,5 @@ dmypy.json
 
 # CatBoost files
 catboost_info/
-
+*.cbm
 
