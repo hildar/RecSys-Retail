@@ -1,5 +1,3 @@
-# RecSys-Retail
-
 ## Two-layer Hybrid Recommender System in retail
 
 ### Contents
