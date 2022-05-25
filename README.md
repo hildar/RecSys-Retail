@@ -2,6 +2,7 @@
 
 ## Two-layer Hybrid Recommender System in retail
 
+### Contents
 
 **Stack:**
 
@@ -25,6 +26,6 @@ Create two-layer hybrid recommender system for retail data and evaluate it by cu
 5. Feature engineering for ranking
 
 
-## User guide
+### User guide
 
-You can open [train.ipynb](https://github.com/hildar/RecSys-Retail/blob/main/train.ipynb) Jupiter notebook file and explore this one step-by-step.
+Please, open [train.ipynb](https://github.com/hildar/RecSys-Retail/blob/main/train.ipynb) Jupiter notebook file and explore how to create *Recommender system* step-by-step.
