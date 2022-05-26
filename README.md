@@ -76,6 +76,6 @@ Here we are evaluating different types of recommendations:
 
 And are selecting optimal value of Recall:
 
-<img src="img/recall.png" alt="recall" width="300"/>
+<img src="img/recall.png" alt="recall" width="600"/>
 
 
