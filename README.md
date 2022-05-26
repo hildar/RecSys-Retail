@@ -39,7 +39,7 @@ First is looking at datasets and prefiltering data
 
 #### 2. Matching model
 
-Learn first-layer model as baseline. In MainRecommender class we have two base models from implicit lib - ItemItemRecommender and AlternatingLeastSquares:
+Learn first-layer model as baseline. In `MainRecommender` class we have two base models from implicit lib - `ItemItemRecommender` and `AlternatingLeastSquares`:
 
 ```
     @staticmethod
@@ -64,8 +64,17 @@ Learn first-layer model as baseline. In MainRecommender class we have two base m
         return model
 ```
 
-ALS used to find similar users, items and als recommendations. ItemItemRecommender used to find own item recommendations among user's purchases.
+`ALS` used to find similar users, items and als recommendations. `ItemItemRecommender` used to find own item recommendations among user's purchases.
 
 #### 3. Evaluate Top@k Recall
+
+Here we are evaluating different types of recommendations:
+
+![types of recommendations](img/types_recs.png)
+
+And are selecting optimal value of Recall:
+
+![recall](img/recall.png)
+
 
 
