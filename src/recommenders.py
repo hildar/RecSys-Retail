@@ -174,7 +174,6 @@ class MainRecommender:
         return res
 
     def get_similar_users_recommendation(self, user_id, N=5):
-        """Рекомендуем топ-N товаров, среди купленных похожими юзерами"""
         """Get top-N items among similar users purchases"""
 
         res = []
