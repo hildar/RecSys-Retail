@@ -27,3 +27,45 @@ Create two-layer hybrid recommender system for retail data and evaluate it by cu
 ### User guide
 
 Please, open [train.ipynb](https://github.com/hildar/RecSys-Retail/blob/main/train.ipynb) Jupiter notebook file and explore how to create *Recommender system* step-by-step.
+
+Project has next few steps:
+
+#### 1. Prepare data
+
+First is looking at datasets and prefiltering data
+
+![data image](img/data.png)
+
+
+#### 2. Matching model
+
+Learn first-layer model as baseline. In MainRecommender class we have two base models from implicit lib - ItemItemRecommender and AlternatingLeastSquares:
+
+```
+    @staticmethod
+    def fit_own_recommender(user_item_matrix):
+        """Learn model that get item recommendations among user's purchases"""
+
+        own_recommender = ItemItemRecommender(K=1, num_threads=4)
+        own_recommender.fit(csr_matrix(user_item_matrix).T.tocsr())
+
+        return own_recommender
+
+    @staticmethod
+    def fit(user_item_matrix, n_factors=20, regularization=0.001, iterations=15, num_threads=4):
+        """Learn ALS"""
+
+        model = AlternatingLeastSquares(factors=n_factors,
+                                        regularization=regularization,
+                                        iterations=iterations,
+                                        num_threads=num_threads)
+        model.fit(csr_matrix(user_item_matrix).T.tocsr())
+
+        return model
+```
+
+ALS used to find similar users, items and als recommendations. ItemItemRecommender used to find own item recommendations among user's purchases.
+
+#### 3. Evaluate Top@k Recall
+
+
