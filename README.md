@@ -68,6 +68,8 @@ Learn first-layer model as baseline. In `MainRecommender` class we have two base
 
 #### 3. Evaluate Top@k Recall
 
+For first-layer model we have taken Recall metric because it is show the proportion of correct answers from real purchases. With this approach we going to significantly cut dataset size for second-layer model.
+
 Here we are evaluating different types of recommendations:
 
 ![types of recommendations](img/types_recs.png)
