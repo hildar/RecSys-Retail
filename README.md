@@ -72,7 +72,7 @@ For first-layer model we have taken Recall metric because it is show the proport
 
 Here we are evaluating different types of recommendations:
 
-<img src="img/types_recs.png" alt="types_recs" width="800"/>
+<img src="img/types_recs.png" alt="types_recs" width="700"/>
 
 And are selecting optimal value of Recall:
 
