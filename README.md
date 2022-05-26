@@ -15,7 +15,7 @@
 Create two-layer hybrid recommender system for retail data and evaluate it by custom **Precision@k**.
 
 
-**Stages**:
+**Steps**:
 
 1. Prepare data:  prefiltering
 2. Matching model (initialize MainRecommender 1-st layer model as baseline)
