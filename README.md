@@ -34,7 +34,7 @@ Project has next few steps:
 
 First is looking at datasets and prefiltering data
 
-![data image](img/data.png)
+<img src="img/data.png" alt="data" width="800"/>
 
 
 #### 2. Matching model
@@ -72,10 +72,10 @@ For first-layer model we have taken Recall metric because it is show the proport
 
 Here we are evaluating different types of recommendations:
 
-<img src="img/types_recs.png" alt="types_recs" width="700"/>
+<img src="img/types_recs.png" alt="types_recs" width="800"/>
 
 And are selecting optimal value of Recall:
 
-<img src="img/recall.png" alt="recall" width="700"/>
+<img src="img/recall.png" alt="recall" width="800"/>
 
 
