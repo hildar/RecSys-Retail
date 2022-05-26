@@ -30,6 +30,7 @@ Please, open [train.ipynb](https://github.com/hildar/RecSys-Retail/blob/main/tra
 
 Project has next few steps:
 
+
 #### 1. Prepare data
 
 First is looking at datasets and prefiltering data
@@ -45,9 +46,10 @@ Learn first-layer model as baseline. In `MainRecommender` class we have two base
 
 `ALS` used to find similar users, items and als recommendations. `ItemItemRecommender` used to find own item recommendations among user's purchases.
 
+
 #### 3. Evaluate Top@k Recall
 
-For first-layer model we have taken Recall metric because it is show the proportion of correct answers from real purchases. With this approach we going to significantly cut dataset size for second-layer model.
+For first-layer model we have taken **Recall@k** metric because it is show the proportion of correct answers from real purchases. With this approach we going to significantly cut dataset size for second-layer model.
 
 Here we are evaluating different types of recommendations:
 
@@ -57,4 +59,29 @@ And are selecting optimal value of Recall:
 
 <img src="img/recall.png" alt="recall" width="800"/>
 
+
+#### 4. Ranking model
+
+In that step we are making new **X_train** dataset with **target** based on purchases:
+
+<img src="img/target.png" alt="target" width="700"/>
+
+Here we are choosing classifier from `LightGBM` and `CatBoost`, evaluate it by **Precision@k** at test data. In this step we have not impressive result.
+
+
+#### 5. Feature engineering for ranking
+
+Adding new features for ranking model based on user, item and paired user-item data.
+
+<img src="img/paired.png" alt="paired" width="700"/>
+
+Controling overfitting for `CatBoost` and cutting extra estimators:
+
+<img src="img/catboost.png" alt="catboost" width="700"/>
+
+Ranking model show us **doubling growth** precision metric relatively baseline. 
+
+As we see the best feature importance is paired user-item features:
+
+<img src="img/feature_importance.png" alt="catfeature_importance" width="700"/>
 
