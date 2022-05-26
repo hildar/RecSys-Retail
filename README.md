@@ -41,28 +41,7 @@ First is looking at datasets and prefiltering data
 
 Learn first-layer model as baseline. In `MainRecommender` class we have two base models from implicit lib - `ItemItemRecommender` and `AlternatingLeastSquares`:
 
-```
-    @staticmethod
-    def fit_own_recommender(user_item_matrix):
-        """Learn model that get item recommendations among user's purchases"""
-
-        own_recommender = ItemItemRecommender(K=1, num_threads=4)
-        own_recommender.fit(csr_matrix(user_item_matrix).T.tocsr())
-
-        return own_recommender
-
-    @staticmethod
-    def fit(user_item_matrix, n_factors=20, regularization=0.001, iterations=15, num_threads=4):
-        """Learn ALS"""
-
-        model = AlternatingLeastSquares(factors=n_factors,
-                                        regularization=regularization,
-                                        iterations=iterations,
-                                        num_threads=num_threads)
-        model.fit(csr_matrix(user_item_matrix).T.tocsr())
-
-        return model
-```
+<img src="img/implicit.png" alt="implicit" width="700"/>
 
 `ALS` used to find similar users, items and als recommendations. `ItemItemRecommender` used to find own item recommendations among user's purchases.
 
