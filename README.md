@@ -42,7 +42,7 @@ First is looking at datasets and prefiltering data
 
 Learn first-layer model as baseline. In `MainRecommender` class we have two base models from implicit lib - `ItemItemRecommender` and `AlternatingLeastSquares`:
 
-<img src="img/implicit.png" alt="implicit" width="700"/>
+<img src="img/implicit.png" alt="implicit" width="600"/>
 
 `ALS` used to find similar users, items and als recommendations. `ItemItemRecommender` used to find own item recommendations among user's purchases.
 
