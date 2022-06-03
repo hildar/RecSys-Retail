@@ -1,6 +1,8 @@
-## Two-layer Hybrid Recommender System in retail
+# Two-layer Hybrid Recommender System in retail
 
-### Contents
+## About 
+
+Created two-layer hybrid recommender system for retail data and got **doubling growth** relatively baseline. Evaluated by custom precision metric.
 
 **Stack:**
 
@@ -11,8 +13,7 @@
 **Data:** from [Retail X5 Hero Competition](https://retailhero.ai/c/recommender_system/overview)
 
 
-**Task:** 
-Create two-layer hybrid recommender system for retail data and evaluate it by custom **Precision@k**.
+
 
 
 **Steps**:
@@ -24,7 +25,7 @@ Create two-layer hybrid recommender system for retail data and evaluate it by cu
 5. Feature engineering for ranking
 
 
-### User guide
+## Usage
 
 Please, open [train.ipynb](https://github.com/hildar/RecSys-Retail/blob/main/train.ipynb) Jupiter notebook file and explore how to create *Recommender system* step-by-step.
 
