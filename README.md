@@ -2,7 +2,7 @@
 
 ## About 
 
-Created two-layer hybrid recommender system for retail data and got **doubling growth** relatively baseline. Evaluated by custom precision metric.
+Created two-layer hybrid recommender system for retail data and got **doubling growth** relatively baseline. Evaluated by custom *precision* metric.
 
 **Stack:**
 
