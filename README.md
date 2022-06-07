@@ -80,7 +80,7 @@ Controling overfitting for `CatBoost` and cutting extra estimators:
 
 <img src="img/catboost.png" alt="catboost" width="700"/>
 
-Ranking model show us **doubling growth** precision metric relatively baseline. 
+Ranking model gave us **double the growth** compared to the baseline.. 
 
 As we see the best feature importance is paired user-item features:
 
