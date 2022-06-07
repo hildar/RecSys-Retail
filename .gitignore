@@ -141,3 +141,4 @@ dmypy.json
 catboost_info/
 *.cbm
 
+img/recsys conclusion.png
