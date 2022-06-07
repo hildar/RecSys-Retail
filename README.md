@@ -2,7 +2,7 @@
 
 ## About 
 
-Two-layer hybrid recommender system for retail. Layer 1 uses an [Implicit](https://github.com/benfred/implicit) library for sparse data (KNN and ALS approaches). Level 2 uses a ranking model using the [CatBoost](https://catboost.ai/) (gradient boosting). This gave **double the growth** compared to the baseline. Evaluated by custom *precision* metric.
+Two-layer hybrid recommender system for retail. Layer 1 uses an [Implicit](https://github.com/benfred/implicit) library for sparse data (**KNN** and **ALS** approaches). Level 2 uses a ranking model using the [CatBoost](https://catboost.ai/) (gradient boosting). This gave **double the growth** compared to the baseline. Evaluated by custom *precision* metric.
 
 **Stack:**
 
