@@ -6,7 +6,7 @@ Two-layer hybrid recommender system for retail. Layer 1 uses an [Implicit](https
 
 **Stack:**
 
-- 1-st layer: NLP, Implicit, ItemItemRecommender, ALS, sklearn, pandas, numpy, matplotlib
+- 1-st layer: Implicit, ItemItemRecommender, ALS, sklearn, pandas, numpy, matplotlib
 - 2-nd layer: CatBoost, LightGBM
 
 
